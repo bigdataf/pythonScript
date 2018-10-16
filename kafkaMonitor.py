@@ -17,7 +17,7 @@ import  random
 # 加载配置
 config = ConfigParser.ConfigParser()
 # 配置文件
-config.read("amon.ini")
+config.read("conf/amon.ini")
 
 
 pldict = {}
