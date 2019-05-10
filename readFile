@@ -1,0 +1,13 @@
+f_in = open("docid.txt")
+    line = f_in.readline()
+    while line:
+        try:
+            id = line.strip().encode("utf-8", "ignore")
+            print(id)
+            if id not in dictId:
+                w.write(id + "\n")
+            # pdys = r.get("p_"+key)
+            # print(key,r.delete(key),r.delete("p_"+key))
+        except:
+            print "handle line err:", line
+        line = f_in.readline()
